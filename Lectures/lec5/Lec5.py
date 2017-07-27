@@ -91,12 +91,39 @@ hot.append('pink')
 print('hot = ', hot)
 print('warm = ', warm)
 print()
-# CLONING LIST
 
+# CLONING LIST
 cool = ['blue', 'green', 'gray']
 chill = cool[:]
 chill.append('black')
 print('chill = ', chill)
 print('cool = ', cool)
+print()
+
+# SORTING LIST
+warm = [2, -5, 0]
+sorted_warm = warm.sort()
+print('warm = ', warm)
+print('sorted_warm = ', sorted_warm)
+
+cool = [23, 0, -23]
+sorted_cool = sorted(cool)
+print('cool = ', cool)
+print('sorted_cool = ', sorted_cool)
+print()
+
+# LIST OF LIST ...
+warm = ['yellow', 'orange']
+hot = ['red']
+bright_color = [warm]
+bright_color.append(hot)
+print(bright_color)
+hot.append('pink')
+print(hot)
+print(bright_color)
+
+
+
+
 
 
