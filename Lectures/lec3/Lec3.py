@@ -62,9 +62,18 @@ s = "hello"
 # s[0] = 'y' # make error string immutable
 
 s = 'y' + s[0:len(s)]
-print(s)
-"""
+#print(s)
 
+s = 'abcdefgf'
+# print out substring of s from index 3 to index 6 with default step equal to 1
+print(s[3:6])
+# print print out substring of s from index 3 to index 6 with default step equal to 2
+print(s[3:6:2])
+# print entire string s equivalent s[0:len(s)]
+print(s[::])
+# print out s in reverse order
+print(s[::-1])
+"""
 
 def exhaustive_enumeration(x, esp):
     """
@@ -146,7 +155,6 @@ def bisection1(x, n, esp):
         ans = (low + high) / 2.0
     return ans, num_guesses
 
-
 if __name__ == '__main__':
 
     x, n, esp = 625, 4, 0.01
@@ -157,4 +165,3 @@ if __name__ == '__main__':
     print("ans, number guesses =", bisection(x, esp))
     print("-------------- NEWTON_RAPHSON METHOD --------------")
     print("ans, number guesses =", Newton_Raphson(x, esp))
-
