@@ -102,9 +102,10 @@ print()
 
 # SORTING LIST
 warm = [2, -5, 0]
-sorted_warm = warm.sort()
 print('warm = ', warm)
-print('sorted_warm = ', sorted_warm)
+warm.sort()
+print('warm_sorted = ', warm)
+print('sorted_warm = ', warm)
 
 cool = [23, 0, -23]
 sorted_cool = sorted(cool)
@@ -115,8 +116,7 @@ print()
 # LIST OF LIST ...
 warm = ['yellow', 'orange']
 hot = ['red']
-bright_color = [warm]
-bright_color.append(hot)
+bright_color = [warm, hot]
 print(bright_color)
 hot.append('pink')
 print(hot)
